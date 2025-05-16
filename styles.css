@@ -1,0 +1,57 @@
+.heading {
+  font-size: 50px;
+  color: #ff1493;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+}
+ 
+img{
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #ffc1cc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+p {
+  display: none;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.love-particle {
+  position: absolute;
+  font-size: 24px;
+  animation: float 2s ease-out forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) scale(1.5) rotate(360deg);
+  }
+}
